@@ -1,19 +1,51 @@
+:root {
+  --mainText: #fff;
+  --hoverColor: #c51f5d;
+  --mainBackgroundColor: #243447;
+  --secondaryBackgroundColor: #141d26;
+}
+
 * {
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #243447;
+  background-color: var(--mainBackgroundColor);
+  font-family: "Noto Serif", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: var(--mainText);
+}
+
+p,
+li,
+span,
+label,
+input,
+textarea {
+  color: var(--mainText);
+}
+
+a {
+  color: var(--hoverColor);
+  text-decoration: none;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #141d26;
-  color: white;
+  color: var(--mainText);
 }
 
 .brand-title {
@@ -23,7 +55,7 @@ body {
 }
 .brand-title a {
   text-decoration: none;
-  color: white;
+  color: var(--mainText);
 }
 .navbar-links ul {
   margin: 0;
@@ -37,30 +69,30 @@ body {
 
 .navbar-links li a {
   text-decoration: none;
-  color: white;
+  color: var(--mainText);
   padding: 1rem;
   display: block;
 }
 
 .navbar-links li:hover {
-  background-color: #c51f5d;
+  background-color: var(--hoverColor);
 }
 
 .toggle-button {
   position: absolute;
-  top: 0.75rem;
-  right: 1rem;
+  top: 1rem;
+  right: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
   height: 21 px;
-  color: white;
+  color: var(--mainText);
   text-decoration: none;
   display: none;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .toggle-button {
     display: flex;
   }
@@ -88,5 +120,25 @@ body {
 
   .navbar-links.active {
     display: flex;
+  }
+}
+
+.s1 {
+  color: var(--mainText);
+}
+
+.s2 {
+  color: var(--mainText);
+  background-color: var(--secondaryBackgroundColor);
+}
+
+.container {
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 95%;
   }
 }
