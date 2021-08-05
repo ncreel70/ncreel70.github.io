@@ -142,12 +142,14 @@ a {
   grid-template-columns: repeat(auto-fit, 320px);
   gap: 20px;
   justify-content: center;
-  cursor: pointer;
 }
 
 .project {
   border: 1px solid var(--secondaryBackgroundColor);
   box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  margin-bottom: 20px;
+  height: 325px;
 }
 
 .thumbnail {
