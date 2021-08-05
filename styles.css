@@ -142,6 +142,7 @@ a {
   grid-template-columns: repeat(auto-fit, 320px);
   gap: 20px;
   justify-content: center;
+  cursor: pointer;
 }
 
 .project {
@@ -184,6 +185,14 @@ a {
 .project-container {
   padding-left: 15px;
   margin: 0 auto;
+}
+.project-title {
+  font-size: 20px;
+  margin: 10px 10px;
+}
+
+.project-intro {
+  margin: 10px 10px;
 }
 
 @media screen and (max-width: 600px) {
